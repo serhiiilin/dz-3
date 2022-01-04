@@ -5,10 +5,7 @@ const products = [
     {
     id: 3,
     price: 127,
-    photos: [
-    "1.jpg",
-    "2.jpg",
-    ]
+    photos: ["1.jpg", "2.jpg",]
     },
     {
     id: 5,
@@ -18,9 +15,7 @@ const products = [
     {
     id: 10,
     price: 26,
-    photos: [
-    "3.jpg"
-    ]
+    photos: ["3.jpg"]
     },
     {
     id: 8,
@@ -28,7 +23,11 @@ const products = [
     },
     ];
     
-    let productsPhoto = products.filter(function(photo){
-        return photo.photos == "" && photo.photos =='1.jpg';
-    })
+    let productsPhoto = products.filter(function(product){
+        
+        return product.photos
+    });
     console.log(productsPhoto);
+
+    products.sort();
+    console.log(products);
